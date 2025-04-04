@@ -32,4 +32,31 @@ let checktest2= Boolean(test2)
 
 let test3 = "mcn"
 let checktest3 = Boolean(test3)
-console.log(checktest3); //true 
+// console.log(checktest3); //true 
+
+// ***********Operations************
+
+// console.log("1" + 2); //12
+// console.log(1 + 2 + "2"); // 32
+// console.log(1 + "3"+ "2"); // 132
+// console.log( 2*8 + "3" +2);// 1632
+// console.log( "2" /8+ "3" +2)
+
+//once string is encountered then entire expression is treated as string 
+
+// console.log(true); //true
+// console.log(+true); //1
+// console.log(false); //false
+// console.log(+false); // 0
+
+let x= 2
+console.log(x); // 2
+console.log(x++); // 2 postfix
+console.log(x); // 3 now incremented
+let y = 4
+console.log(++y); // 5 prefix
+
+
+
+
+
