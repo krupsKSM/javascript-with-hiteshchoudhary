@@ -50,5 +50,5 @@ const addNum = (n1,n2) => {
 const mulNum = (n1,n2) => (n1*n2) ;  // implicit return
 
 console.log(addNum(7,9));
-console.log( mulNum(7,5));
+console.log( mulNum(7,15));
 
