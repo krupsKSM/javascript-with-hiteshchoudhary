@@ -55,3 +55,16 @@ function returnSecondVal(getArr){
 
 console.log(returnSecondVal(myNewArray));
 console.log(returnSecondVal([700,40,50,70,56]));
+
+console.log(addOne(7));   // will execute correctly
+
+function addOne(num){
+    return num + 1;
+}
+
+addTwo(3)   //ReferenceError: Cannot access 'addTwo' before initialization
+
+const addTwo = function(num){
+    return num + 2;
+}  // here addTwo is treated as an expression
+                                                                                                                                                                                                                                                                                                    
