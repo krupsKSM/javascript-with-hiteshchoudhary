@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaiDom</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    
+    div.className = "main";
+    div.id = Math.round(Math.random()* 10 + 1);
+   
+    div.setAttribute('title',"loki")
+   
+    div.style.backgroundColor = "green"
+    div.style.padding = '10px'
+    // div.innerText= "Hitesh Sir ROCKS"
+
+    // preferred way to add text
+    const addText = document.createTextNode('chai aur love');
+    div.appendChild(addText);
+    // <div class="main" id="4" title="loki" style="background-color: green; padding: 10px;">chai aur love</div>
+
+    document.body.appendChild(div); // Now we see div on console
+
+    const heading1 = document.createElement('h1');
+    console.log(heading1); //<h1></h1>
+    
+    heading1.setAttribute('id',"abc12");  // <h1 id="abc12"></h1>
+
+    const addHeading = document.createTextNode('DOM manipulation');
+    heading1.appendChild(addHeading); //<h1>DOM manipulation</h1>
+    document.body.appendChild(addHeading) // Now we see DOM manipulation on console
+</script>
+</html>
