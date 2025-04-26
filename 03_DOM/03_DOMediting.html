@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaiDom | supremacy</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    // DOM element addition 
+    let addLanguage = (langName) => {
+        const li = document.createElement('li');
+        li.innerHTML= `${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage('JAVA')
+
+    function addHeader(head) {
+        const header = document.createElement('h3');
+        header.innerHTML = `${head}`;
+        // document.querySelector('.language').appendChild(header)
+        document.querySelector("body").appendChild(header)
+        // notice the difference in both cases
+    }
+    addHeader('this is a header')
+
+    // the below style is more optimised
+
+    function addOptiLang(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+        
+    }
+    addOptiLang("golang")
+
+    // DOM editing 
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);  //<li>python</li>
+    
+    //1st style... not efficient as it involves entire DOM tree traversal
+    secondLang.innerHTML = "Ruby"  
+
+    // 2nd style... create a new li element and replace it with prev element
+    const thirdLang = document.querySelector("li:nth-child(3)")
+    const newLi = document.createElement('li')
+    newLi.textContent = "C++"
+    thirdLang.replaceWith(newLi)
+
+    // 3rd style... 
+    const firstLang = document.querySelector("li:first-Child")
+    firstLang.outerHTML = '<li>MoJo</li>'
+
+    // Remove element
+    const lastlang = document.querySelector("li:last-Child")
+    lastlang.remove()
+
+
+
+</script>
+</html>
