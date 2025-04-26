@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 class="heading" id="title">DOM learning with Chai aur Code<span style="display: none;" > test test text</span></h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h2>Lorem ipsum dolor, sit amet consectetur.</h2>
+        <input type="password" name="" id="">
+        <ul>
+            <li class = "list-item">one</li>
+            <li class = "list-item">two</li>
+            <li class = "list-item">three</li>
+        </ul>
+    </div>
+    <div class="parent">
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <!-- child node count will increase  -->
+    </div>
+</body>
+<script>
+    let parent = document.querySelector('.parent')
+
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[3]);
+    // console.log(parent.children[3].innerText);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        // console.log(parent.children[i]); 
+        // console.log(parent.children[i].innerHTML);
+    }
+
+    parent.children[1].style.color = "green";
+    parent.children[3].style.backgroundColor = "grey";
+
+    console.log(parent.firstElementChild); // <div class="day">Mon</div>
+    
+    console.log(parent.lastElementChild); 
+    // <div class="day" style="background-color: grey;">Thu</div>
+    
+    const dayOne=document.querySelector('.day');
+    //selects the first element with class day
+
+    console.log(dayOne);  
+    // <div class="day">Mon</div>
+    
+    console.log(dayOne.parentElement); 
+    //gives the parent element with class parent
+    
+    console.log(dayOne.nextElementSibling); 
+    // <div class="day" style="color: green;">Tue</div>
+
+    let daytwo = dayOne.nextElementSibling
+    console.log(daytwo.nextElementSibling);
+    // <div class="day">Wed</div>
+
+    console.log("NODES : ", parent.childNodes);
+
+
+</script>
+</html>
