@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <style>
+        body{
+            background-color: black;
+            color:aliceblue;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Let's calculate your BMI </h1>
+        <form action="">
+            <p>Enter your Name : <input type="text" id = "username" ></p>
+            <p><label>Enter your age : </label><input type="text" placeholder="in Years"></p>
+            <p>
+                <label for="height">Height : </label ><input type="text" placeholder="in cm" id="height" />
+            </p>
+            <P>
+                <label for="weight">Weight : </label><input type="text" placeholder="in cm" id="weight"/>
+            </P>
+            <button style = "cursor: pointer;">CALCULATE</button>
+            <div id="result"></div>
+            <div id="Weight-guide">
+                <h3>BMI Weight-guide</h3>
+                <p>Under weight = less than 18.6</p>
+                <p>Normal Range = 18.6 - 24.9</p>
+                <p>Over-weight = Greater than 24.9</p>
+            </div>
+        </form>
+    </div>
+<script src="bmi1.js"></script>
+</body>
+
+</html>
