@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+nav button{
+    border-radius: 5px;
+    border-style: dashed;
+    width: 70px;
+    background-color: yellow;
+    
+}
+
+nav button a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.canvas  {
+    /* height: 300px; */
+    /* width: 400px; */
+    background-color: rgb(249, 241, 241);
+    text-align: center;
+    margin: 10px ;
+    color: rgb(84, 248, 171);
+}
+
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: solid blueviolet 10px;
+    display:inline-block;
+    margin: 5px;
+    cursor: pointer;
+    
+    
+}
+
+#grey{
+    background: grey;
+}
+
+#white{
+    background: white;
+}
+
+#blue{
+    background: blue;
+}
+
+#red{
+    background: red;
+}
+
+#green{
+    background: green;
+}
