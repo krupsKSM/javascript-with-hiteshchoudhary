@@ -1,0 +1,25 @@
+html{
+    font-family: sans-serif;
+} 
+/* using semicolon above will make html become global thereby overpowering all our styles */
+.lastResult{
+    color: rgb(246, 47, 94);
+    padding: 10px;
+};
+
+#wrapper{
+    box-sizing: border-box;
+    
+} 
+#sbmt{
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+#newGameButton{
+    background-color: aquamarine;
+    /* width: 350px; */
+    cursor: pointer;
+    border-radius: 20px;
+}
